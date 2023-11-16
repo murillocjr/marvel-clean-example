@@ -1,0 +1,24 @@
+{
+  "name": "AbstractCoordinator",
+  "version": "0.1.0",
+  "summary": "AbstractCoordinator protocols.",
+  "swift_versions": "5.0",
+  "description": "Store interface definitions for Coordinator Pattern.",
+  "homepage": "https://bitbucket.lima.bcp.com.pe/projects/NFMC/repos/ios-sample-project-marvel/browse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jorge Murillo": "jmurillo@bcp.com.pe"
+  },
+  "source": {
+    "git": "https://bitbucket.lima.bcp.com.pe/scm/nfmc/ios-sample-project-marvel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "AbstractCoordinator/Classes/**/*",
+  "swift_version": "5.0"
+}

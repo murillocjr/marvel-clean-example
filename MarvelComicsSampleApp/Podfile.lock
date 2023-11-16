@@ -1,0 +1,51 @@
+PODS:
+  - AbstractCoordinator (0.1.0)
+  - CoreEntities (0.1.0)
+  - Home (0.1.0):
+    - AbstractCoordinator
+    - CoreEntities
+    - MarvelCore
+  - Login (0.1.0):
+    - AbstractCoordinator
+    - CoreEntities
+    - MarvelCore
+  - MarvelCore (0.1.0)
+  - MarvelManager (0.1.0):
+    - AbstractCoordinator
+    - CoreEntities
+    - Home
+    - Login
+
+DEPENDENCIES:
+  - AbstractCoordinator (from `../AbstractCoordinator`)
+  - CoreEntities (from `../CoreEntities`)
+  - Home (from `../Home`)
+  - Login (from `../Login`)
+  - MarvelCore (from `../MarvelCore`)
+  - MarvelManager (from `../MarvelManager`)
+
+EXTERNAL SOURCES:
+  AbstractCoordinator:
+    :path: "../AbstractCoordinator"
+  CoreEntities:
+    :path: "../CoreEntities"
+  Home:
+    :path: "../Home"
+  Login:
+    :path: "../Login"
+  MarvelCore:
+    :path: "../MarvelCore"
+  MarvelManager:
+    :path: "../MarvelManager"
+
+SPEC CHECKSUMS:
+  AbstractCoordinator: 0c620e0470d0ba064ecc8815cd81a4b8422a8d86
+  CoreEntities: bb4e51af4fbee8b13f927c80bfd1f03eb8d2f8b9
+  Home: 652fe4570a4871aa8f8afde1400ae410fe9bee3e
+  Login: b7e49849ec31da490bf51e97473c4cf8fc8ee36a
+  MarvelCore: 3e9c1b34eac86cef0ecc6ae958eba825b59da02b
+  MarvelManager: d82f407ab5f946294a29c4683a3ed0949600645d
+
+PODFILE CHECKSUM: 27b9b1ff32f160ac36f9bb91a61cecfb754e9eb7
+
+COCOAPODS: 1.12.1

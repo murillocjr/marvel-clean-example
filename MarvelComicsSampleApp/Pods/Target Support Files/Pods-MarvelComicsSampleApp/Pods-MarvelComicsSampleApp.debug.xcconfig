@@ -1,0 +1,15 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AbstractCoordinator" "${PODS_CONFIGURATION_BUILD_DIR}/CoreEntities" "${PODS_CONFIGURATION_BUILD_DIR}/Home" "${PODS_CONFIGURATION_BUILD_DIR}/Login" "${PODS_CONFIGURATION_BUILD_DIR}/MarvelCore" "${PODS_CONFIGURATION_BUILD_DIR}/MarvelManager"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AbstractCoordinator/AbstractCoordinator.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CoreEntities/CoreEntities.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Home/Home.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Login/Login.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MarvelCore/MarvelCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MarvelManager/MarvelManager.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -framework "AbstractCoordinator" -framework "CoreEntities" -framework "Home" -framework "Login" -framework "MarvelCore" -framework "MarvelManager"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

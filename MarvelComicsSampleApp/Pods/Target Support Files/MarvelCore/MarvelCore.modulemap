@@ -1,0 +1,6 @@
+framework module MarvelCore {
+  umbrella header "MarvelCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B1640DB5-CF98-425E-8646-FB64652C8A66"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78EE992E-03F6-4D7D-8F2A-45D0D3149101"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Login/Login/Classes/Data/Remote/LoginTask.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "doLogin(requestDTO:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78EE992E-03F6-4D7D-8F2A-45D0D3149101 - 9963fd990beafda1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Login.LoginTask.doLogin(requestDTO: Login.LoginRequestDTO, completion: (Swift.Result&lt;Login.LoginResponseDTO, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Login"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/MacintoshHD/Users/jmurillc/Documents/BCP/ios-sample-project-marvel/MVVM-COORD-CLEAN/Login/Login/Classes/Data/Remote/LoginTask.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "78EE992E-03F6-4D7D-8F2A-45D0D3149101 - 9963fd990beafda1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Login.LoginTask.doLogin(requestDTO: Login.LoginRequestDTO, completion: (Swift.Result&lt;Login.LoginResponseDTO, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Login"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/MacintoshHD/Users/jmurillc/Documents/BCP/ios-sample-project-marvel/MVVM-COORD-CLEAN/Login/Login/Classes/Data/Remote/LoginTask.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "78EE992E-03F6-4D7D-8F2A-45D0D3149101 - 9963fd990beafda1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Login.LoginTask.doLogin(requestDTO: Login.LoginRequestDTO, completion: (Swift.Result&lt;Login.LoginResponseDTO, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Login"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/MacintoshHD/Users/jmurillc/Documents/BCP/ios-sample-project-marvel/MVVM-COORD-CLEAN/Login/Login/Classes/Data/Remote/LoginTask.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3926B28-ECE0-4D3B-82DF-F33615A7192D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Login/Login/Classes/Data/Remote/LoginTask.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "doLogin(requestDTO:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

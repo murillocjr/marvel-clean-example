@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-MarvelComicsSampleApp/Pods-MarvelComicsSampleApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AbstractCoordinator/AbstractCoordinator.framework
+${BUILT_PRODUCTS_DIR}/CoreEntities/CoreEntities.framework
+${BUILT_PRODUCTS_DIR}/Home/Home.framework
+${BUILT_PRODUCTS_DIR}/Login/Login.framework
+${BUILT_PRODUCTS_DIR}/MarvelCore/MarvelCore.framework
+${BUILT_PRODUCTS_DIR}/MarvelManager/MarvelManager.framework

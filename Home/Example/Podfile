@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Home_Example' do
+  pod 'CoreEntities', :path => '../../CoreEntities'
+  pod 'AbstractCoordinator', :path => '../../AbstractCoordinator'
+  pod 'MarvelCore', :path => '../../MarvelCore'
+
+  pod 'Home', :path => '../', :testspecs => ['IntegratedTest']
+
+end

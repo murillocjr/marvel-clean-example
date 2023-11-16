@@ -1,0 +1,44 @@
+{
+  "name": "Login",
+  "version": "0.1.0",
+  "summary": "Marvel Sample App Login.",
+  "description": "Marvel Sample App Login.",
+  "homepage": "https://bitbucket.lima.bcp.com.pe/projects/NFMC/repos/ios-sample-project-marvel/browse",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "Jorge Murillo": "jmurillo@bcp.com.pe"
+  },
+  "source": {
+    "git": "https://bitbucket.lima.bcp.com.pe/scm/nfmc/ios-sample-project-marvel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Login/Classes/**/*",
+  "dependencies": {
+    "CoreEntities": [
+
+    ],
+    "AbstractCoordinator": [
+
+    ],
+    "MarvelCore": [
+
+    ]
+  },
+  "resource_bundles": {
+    "MarvelLogin": [
+      "Login/Classes/View/Login.storyboard"
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "IntegratedTest",
+      "test_type": "unit",
+      "source_files": "Login/IntegratedTests/**/*"
+    }
+  ]
+}

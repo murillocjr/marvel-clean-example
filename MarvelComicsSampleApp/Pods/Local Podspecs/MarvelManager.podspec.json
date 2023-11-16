@@ -1,0 +1,36 @@
+{
+  "name": "MarvelManager",
+  "version": "0.1.0",
+  "summary": "Marvel Sample App Manager.",
+  "description": "Marvel Sample App Manager.",
+  "homepage": "https://bitbucket.lima.bcp.com.pe/projects/NFMC/repos/ios-sample-project-marvel/browse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jorge Murillo": "jmurillo@bcp.com.pe"
+  },
+  "source": {
+    "git": "https://bitbucket.lima.bcp.com.pe/scm/nfmc/ios-sample-project-marvel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MarvelManager/Classes/**/*",
+  "dependencies": {
+    "CoreEntities": [
+
+    ],
+    "AbstractCoordinator": [
+
+    ],
+    "Login": [
+
+    ],
+    "Home": [
+
+    ]
+  }
+}

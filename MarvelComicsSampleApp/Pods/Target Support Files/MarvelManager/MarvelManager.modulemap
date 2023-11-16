@@ -1,0 +1,6 @@
+framework module MarvelManager {
+  umbrella header "MarvelManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

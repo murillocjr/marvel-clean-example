@@ -1,0 +1,13 @@
+use_frameworks!
+platform :ios, '9.0'
+
+plugin 'cocoapods-art', :sources => [
+  'cocoapods-cocoapods',
+  'NFMC.cocoapods.Release'
+]
+
+target 'AbstractCoordinator_Example' do
+  pod 'SwiftLint'
+  pod 'AbstractCoordinator', :path => '../'
+
+end

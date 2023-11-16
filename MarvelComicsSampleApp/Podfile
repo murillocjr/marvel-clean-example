@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MarvelComicsSampleApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MarvelComicsSampleApp
+  pod 'MarvelManager', :path => '../MarvelManager'
+  pod 'CoreEntities', :path => '../CoreEntities'
+  pod 'AbstractCoordinator', :path => '../AbstractCoordinator'
+  pod 'MarvelCore', :path => '../MarvelCore'
+  pod 'Login', :path => '../Login'
+  pod 'Home', :path => '../Home'
+end

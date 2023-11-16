@@ -1,0 +1,45 @@
+{
+  "name": "Home",
+  "version": "0.1.0",
+  "summary": "Marvel Sample Home.",
+  "description": "Marvel Sample Home.",
+  "homepage": "https://bitbucket.lima.bcp.com.pe/projects/NFMC/repos/ios-sample-project-marvel/browse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jorge Murillo": "jmurillo@bcp.com.pe"
+  },
+  "source": {
+    "git": "https://bitbucket.lima.bcp.com.pe/scm/nfmc/ios-sample-project-marvel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Home/Classes/**/*",
+  "dependencies": {
+    "CoreEntities": [
+
+    ],
+    "AbstractCoordinator": [
+
+    ],
+    "MarvelCore": [
+
+    ]
+  },
+  "resource_bundles": {
+    "MarvelHome": [
+      "Home/Classes/View/Home.storyboard"
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "IntegratedTest",
+      "test_type": "unit",
+      "source_files": "Home/IntegratedTests/**/*"
+    }
+  ]
+}

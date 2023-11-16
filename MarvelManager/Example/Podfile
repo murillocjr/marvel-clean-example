@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MarvelManager_Example' do
+  pod 'MarvelManager', :path => '../'
+  
+  pod 'CoreEntities', :path => '../../CoreEntities'
+  pod 'AbstractCoordinator', :path => '../../AbstractCoordinator'
+  pod 'Login', :path => '../../Login'
+  pod 'Home', :path => '../../Home'
+
+end
