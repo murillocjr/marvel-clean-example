@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1117E8B79B18AF499E988555 /* Pods_Login_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F97B6F136CE667C2F933388 /* Pods_Login_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		740C46502664821D003C6BED /* ExampleMockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C464F2664821D003C6BED /* ExampleMockCoordinator.swift */; };
 		740C46A426649A34003C6BED /* ExampleMockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C46A326649A34003C6BED /* ExampleMockRouter.swift */; };
-		7575DE96E8D05FC6C421F207 /* Pods_Login_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B09694332B84BCC7DF00850 /* Pods_Login_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B09694332B84BCC7DF00850 /* Pods_Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F97B6F136CE667C2F933388 /* Pods_Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484E4EE5BB0B7FAA604BA550 /* Pods-Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Example.debug.xcconfig"; path = "Target Support Files/Pods-Login_Example/Pods-Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Login_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,9 +27,8 @@
 		740C46A326649A34003C6BED /* ExampleMockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMockRouter.swift; sourceTree = "<group>"; };
 		894E973BE858FFF4CFDFF06F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		89AF94389CD21B17FCDE8CC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8CB3101A51E7FB8A19D5D7EE /* Pods-Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Example.release.xcconfig"; path = "Target Support Files/Pods-Login_Example/Pods-Login_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9776C7FD5C06CC3D40B7F6F7 /* Login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Login.podspec; path = ../Login.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D8081AE15513D8FF71870C5 /* Pods-Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Example.release.xcconfig"; path = "Target Support Files/Pods-Login_Example/Pods-Login_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C83A72A0D6680EE574FC4FEE /* Pods-Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Example.debug.xcconfig"; path = "Target Support Files/Pods-Login_Example/Pods-Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,21 +36,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7575DE96E8D05FC6C421F207 /* Pods_Login_Example.framework in Frameworks */,
+				1117E8B79B18AF499E988555 /* Pods_Login_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		443C1E94AF3AA8115E7FB491 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2B09694332B84BCC7DF00850 /* Pods_Login_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +50,7 @@
 				607FACD21AFB9204008FA782 /* Example for Login */,
 				607FACD11AFB9204008FA782 /* Products */,
 				817FE5A4D7E29EA0F5B1D44E /* Pods */,
-				443C1E94AF3AA8115E7FB491 /* Frameworks */,
+				A60F0571560CB5A031DF575C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +97,18 @@
 		817FE5A4D7E29EA0F5B1D44E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C83A72A0D6680EE574FC4FEE /* Pods-Login_Example.debug.xcconfig */,
-				9D8081AE15513D8FF71870C5 /* Pods-Login_Example.release.xcconfig */,
+				484E4EE5BB0B7FAA604BA550 /* Pods-Login_Example.debug.xcconfig */,
+				8CB3101A51E7FB8A19D5D7EE /* Pods-Login_Example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A60F0571560CB5A031DF575C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F97B6F136CE667C2F933388 /* Pods_Login_Example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,11 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Login_Example" */;
 			buildPhases = (
-				CBF5D6E8A861C4E0E0204F97 /* [CP] Check Pods Manifest.lock */,
+				E303A2DB7D10B3C3CD460379 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				2A2BBD393E2CAFE5CCE169DE /* [CP] Embed Pods Frameworks */,
+				A48731B825B2BF01073563E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,7 +181,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A2BBD393E2CAFE5CCE169DE /* [CP] Embed Pods Frameworks */ = {
+		A48731B825B2BF01073563E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,7 +205,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Login_Example/Pods-Login_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBF5D6E8A861C4E0E0204F97 /* [CP] Check Pods Manifest.lock */ = {
+		E303A2DB7D10B3C3CD460379 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,7 +355,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C83A72A0D6680EE574FC4FEE /* Pods-Login_Example.debug.xcconfig */;
+			baseConfigurationReference = 484E4EE5BB0B7FAA604BA550 /* Pods-Login_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Login/Info.plist;
@@ -370,7 +370,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D8081AE15513D8FF71870C5 /* Pods-Login_Example.release.xcconfig */;
+			baseConfigurationReference = 8CB3101A51E7FB8A19D5D7EE /* Pods-Login_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Login/Info.plist;

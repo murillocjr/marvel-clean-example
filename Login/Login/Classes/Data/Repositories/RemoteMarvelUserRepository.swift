@@ -8,6 +8,27 @@
 import Foundation
 import CoreEntities
 
+
+protocol BackendDataHandlerDelegateProtocol {
+    func transformAndCallExternalCompletion(loginResponseDTO: LoginResponseDTO)
+    func handleBackendError(error: Error)
+}
+class BackendDataHandlerDelegate: BackendDataHandlerDelegateProtocol {
+    var completion: (Result<MarvelUser, Error>) -> Void
+    
+    init(completion: @escaping (Result<MarvelUser, Error>) -> Void) {
+        self.completion = completion
+    }
+    func transformAndCallExternalCompletion(loginResponseDTO: LoginResponseDTO) {
+        completion(.success(loginResponseDTO.data.toDomainUser()))
+    }
+    func handleBackendError(error: Error) {
+        completion(.failure(error))
+    }
+}
+
+
+
 final class RemoteMarvelUserRepository: MarvelUserRepositoryProtocol {
     var dataSource: UserDataSourceProtocol  //importante que esto es un protocolo y no una clase concreta
     
@@ -19,17 +40,9 @@ final class RemoteMarvelUserRepository: MarvelUserRepositoryProtocol {
                                 completion: @escaping (Result<MarvelUser, Error>) -> Void) -> Void {
 
         let requestDTO = LoginRequestDTO(username: username, password: password)
-        
-        dataSource.login(
-            loginRequestDTO: requestDTO,
-            completion: { result in
-                switch result {
-                case .success(let loginResponseDTO):
-                    completion(.success(loginResponseDTO.data.toDomainUser()))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
-            }
-        )
+        var backendDataHandlerDelegate = BackendDataHandlerDelegate(completion: completion)
+
+        dataSource.delegate = backendDataHandlerDelegate
+        dataSource.login(loginRequestDTO: requestDTO)
     }
 }

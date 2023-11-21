@@ -12,10 +12,12 @@ struct LoginResponseDTO: Decodable {
     private enum CodingKeys: String, CodingKey {
         case status
         case code
+        case serverMessage
         case data
     }
     let status: String
     let code: Int
+    var serverMessage: String?
     let data: LoginUserDTO
 }
 

@@ -6,18 +6,15 @@
 //
 
 class UserRemoteDataSource: UserDataSourceProtocol {
+    public var delegate: BackendDataHandlerDelegateProtocol?
+    
     func login(
-        loginRequestDTO: LoginRequestDTO,
-        completion: @escaping (Result<LoginResponseDTO, Error>) -> Void)
+        loginRequestDTO: LoginRequestDTO
+    )
     {
-            
-            
-            
             LoginTask.doLogin(
                 requestDTO: loginRequestDTO,
-                completion: completion
+                delegate: delegate
             )
-            
-            
     }
 }

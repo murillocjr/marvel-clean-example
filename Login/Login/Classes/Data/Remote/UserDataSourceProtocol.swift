@@ -6,35 +6,8 @@
 //
 
 protocol UserDataSourceProtocol {
+    var delegate: BackendDataHandlerDelegateProtocol? { get set }
     func login(
-        loginRequestDTO: LoginRequestDTO,
-        completion: @escaping (Result<LoginResponseDTO, Error>) -> Void
+        loginRequestDTO: LoginRequestDTO
     )
 }
-
-
-////
-///descripcion de comportamiento o caracteristicas
-///
-///esto vuela
-///esto tiene plumas
-///             ---> protocolo animal_volador
-
-
-//I : interface segregation
-
-
-// si puedes extender protocolos
-
-// no puedes hacer subclases de structs
-
-//protcolo: volador
-//    -->viaja_por_el aire
-//
-//protocolo: nadador
-//    -->viaja_por_el agua
-//
-//
-//
-//Paloma: volador
-//Pato: <volador, nadador>

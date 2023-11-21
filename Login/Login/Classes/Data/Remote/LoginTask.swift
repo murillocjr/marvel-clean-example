@@ -14,7 +14,9 @@ struct ConnectionParameters {
 class LoginTask {
     static func doLogin(
         requestDTO: LoginRequestDTO,
-        completion: @escaping (Result<LoginResponseDTO, Error>) -> Void) -> Void {
+        delegate: BackendDataHandlerDelegateProtocol?
+    ) -> Void
+    {
         
         do {
             let url = URL(string: ConnectionParameters.endpoint)!
@@ -35,15 +37,21 @@ class LoginTask {
                 DispatchQueue.main.async { ///Ejecuta acciones en el hilo principal
                     do {
                         let responseDTO = try JSONDecoder().decode(LoginResponseDTO.self, from: data)
-                        completion(.success(responseDTO))
+                        if let delegate = delegate {
+                            delegate.transformAndCallExternalCompletion(loginResponseDTO: responseDTO)
+                        }
                     } catch {
-                        completion(.failure(error))
+                        if let delegate = delegate {
+                            delegate.handleBackendError(error: error)
+                        }
                     }
                 }
             }
             task.resume()
         } catch {
-            completion(.failure(error))
+            if let delegate = delegate {
+                delegate.handleBackendError(error: error)
+            }
         }
     }
 }

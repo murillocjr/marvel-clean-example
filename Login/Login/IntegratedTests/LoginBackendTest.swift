@@ -26,10 +26,49 @@ class LoginBackendTest: XCTestCase {
             username: "admin",
             password: "123456",
             completion: { result in
-                print("received data from backend")
                 
-                exp.fulfill()
-                success = true
+                switch result {
+                    case .success(let marvelUser):
+                        print(marvelUser)
+                        exp.fulfill()
+                        success = true
+                    case .failure(let error):
+                        print(error)
+                        success = false
+                }
+            }
+        )
+
+        waitForExpectations(timeout: 30) { error in
+            if let error = error {
+                XCTFail("waitForExpectationsWithTimeout errored: \(error)")
+            }
+            XCTAssertEqual(success, true)
+        }
+    }
+    
+    func testLoginWithWrongPassword() {
+        let datasource = UserRemoteDataSource()
+        let repository = RemoteMarvelUserRepository(dataSource: datasource)
+        
+        let exp = expectation(description: "Check Login is successful")
+        var success: Bool = false
+        
+        repository.performLogin(
+            username: "admin",
+            password: "___no_es_el_password",
+            completion: { result in
+                
+                switch result {
+                    case .success(let marvelUser):
+                        print(marvelUser)
+                        success = false
+                        
+                    case .failure(let error):
+                        print(error)
+                        exp.fulfill()
+                        success = true
+                }
             }
         )
 

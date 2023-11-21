@@ -22,11 +22,13 @@ final class MainLoginUseCase: LoginUseCaseProtocol {
     }
 
     func execute(requestValue: LoginUseCaseRequestValue,
-                 completion: @escaping (Result<MarvelUser, Error>) -> Void) -> Void {
-        marvelUserRepository.performLogin(username: requestValue.username,
-                                          password: requestValue.password,
-                                          completion: { result in
-                                            completion(result)
+                 completion: @escaping (Result<MarvelUser, Error>) -> Void) -> Void
+    {
+        marvelUserRepository.performLogin(
+            username: requestValue.username,
+            password: requestValue.password,
+            completion: { result in
+                completion(result)
         })
     }
 }
